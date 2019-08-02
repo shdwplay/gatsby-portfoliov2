@@ -4,9 +4,14 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+// import pic1 from '../assets/images/pic01.jpg';
+// import pic2 from '../assets/images/pic02.jpg';
+// import pic3 from '../assets/images/pic03.jpg';
+
+import ritratti from '../assets/images/ritratti.jpg';
+import eventi from '../assets/images/eventi.jpg';
+import altro from '../assets/images/altro.jpg';
+
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
@@ -70,7 +75,7 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={ritratti} alt="" />
         </div>
         <div className="content">
           <h2>
@@ -86,7 +91,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic2} alt="" />
+          <img src={eventi} alt="" />
         </div>
         <div className="content">
           <h2>
@@ -102,7 +107,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic3} alt="" />
+          <img src={altro} alt="" />
         </div>
         <div className="content">
           <h2>
