@@ -23,9 +23,14 @@ const IndexPage = () => (
           <li>
             <Scroll type="id" element="one">
               <a href="/#" className="button primary">
-                Explore
+                Foto
               </a>
             </Scroll>
+            {/* <Scroll type="id" element="one">
+              <a href="#two" className="button primary">
+                Video
+              </a>
+            </Scroll> */}
           </li>
         </ul>
       </div>
@@ -121,6 +126,23 @@ const IndexPage = () => (
           </p>
         </div>
       </section>
+      <section className="spotlight">
+        <div className="image">
+          <img src={ritratti} alt="" />
+        </div>
+        <div className="content">
+          <h2>
+            {/* Magna primis lobortis */}
+            Questa sezione video
+            <br />
+            sed ullamcorper
+          </h2>
+          <p>
+            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
+            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          </p>
+        </div>
+      </section>    
     </section>
 
     <section id="three" className="wrapper style3 special">
