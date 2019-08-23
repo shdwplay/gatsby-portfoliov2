@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
+import { Link } from 'gatsby';
 
 // import pic1 from '../assets/images/pic01.jpg';
 // import pic2 from '../assets/images/pic02.jpg';
@@ -22,10 +23,11 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Foto
+              <a href="/Gallery" className="button primary">
+                Gallery
               </a>
             </Scroll>
+            {/* <Link to="/Gallery">Gallery</Link> */}
             {/* <Scroll type="id" element="one">
               <a href="#two" className="button primary">
                 Video
@@ -80,7 +82,9 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <img src={ritratti} alt="" />
+          <Link to="/Gallery">
+            <img src={ritratti} alt="" />
+          </Link>
         </div>
         <div className="content">
           <h2>
@@ -96,7 +100,9 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={eventi} alt="" />
+          <Link to="/Gallery">
+            <img src={eventi} alt="" />
+          </Link>
         </div>
         <div className="content">
           <h2>
@@ -112,7 +118,9 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={altro} alt="" />
+          <Link to="/Gallery">
+            <img src={altro} alt="" />
+          </Link>
         </div>
         <div className="content">
           <h2>
