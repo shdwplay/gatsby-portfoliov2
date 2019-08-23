@@ -57,7 +57,7 @@ const IndexPage = () => (
             ullamcorper.
           </p>
         </header>
-        <ul className="icons major">
+        {/* <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
@@ -73,7 +73,7 @@ const IndexPage = () => (
               <span className="label">Dolor</span>
             </span>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
 
@@ -157,7 +157,7 @@ const IndexPage = () => (
             ullamcorper.
           </p>
         </header>
-        <ul className="features">
+        {/* <ul className="features">
           <li className="icon fa-paper-plane">
             <h3>Arcu accumsan</h3>
             <p>
@@ -200,7 +200,7 @@ const IndexPage = () => (
               tincidunt nullam amet leo Aenean ligula consequat consequat.
             </p>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
 
