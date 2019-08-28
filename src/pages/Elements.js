@@ -8,6 +8,9 @@ import pic3 from '../assets/images/pic03.jpg';
 import pic4 from '../assets/images/pic04.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import banner from '../assets/images/bannerdef.jpg';
+
+// import ModalImage from 'react-modal-image';
+
 const IndexPage = () => <Layout>
 	<article id="main">
 		<header>
@@ -18,6 +21,12 @@ const IndexPage = () => <Layout>
 			<div className="inner">
 
 				<section>
+					{/* <ModalImage
+						small={pic1}
+						medium={pic1}
+						alt="Hello World!"
+						imageBackgroundColor=""
+					/> */}
 					<h4>Text</h4>
 					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 					This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.

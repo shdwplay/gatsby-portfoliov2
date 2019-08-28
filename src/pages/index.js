@@ -82,13 +82,13 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <Link to="/Gallery">
+          <Link to="/Gallery#ritratti">
             <img src={ritratti} alt="" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            Magna primis lobortis
+            Sezione Ritratti
             <br />
             sed ullamcorper
           </h2>
@@ -100,13 +100,13 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <Link to="/Gallery">
+          <Link to="/Gallery#eventi">
             <img src={eventi} alt="" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
+            Sezione Eventi
             <br />
             elementum magna
           </h2>
@@ -118,13 +118,13 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <Link to="/Gallery">
+          <Link to="/Gallery#altro">
             <img src={altro} alt="" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
+            Sezione Altro
             <br />
             sed condimentum
           </h2>
@@ -150,7 +150,7 @@ const IndexPage = () => (
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
           </p>
         </div>
-      </section>    
+      </section>
     </section>
 
     <section id="three" className="wrapper style3 special">
