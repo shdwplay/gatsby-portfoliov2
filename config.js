@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/anna-della-badia/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Anna Della Badia',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  subHeading: 'Portfolio',
   // social
   socialLinks: [
     // {

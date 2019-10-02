@@ -47,19 +47,14 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
+            Creativa, amante dell'arte
+            <br />affascinata dal mondo digitale.
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            Nella fotografia ho trovato la mia principale forma d'espressione.
           </p>
         </header>
-        {/* <ul className="icons major">
+        <ul className="icons major">
           <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
@@ -75,7 +70,7 @@ const IndexPage = () => (
               <span className="label">Dolor</span>
             </span>
           </li>
-        </ul> */}
+        </ul>
       </div>
     </section>
 
@@ -88,13 +83,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Sezione Ritratti
-            <br />
-            sed ullamcorper
+            Ritratti
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            La mia collezione di volti.
           </p>
         </div>
       </section>
@@ -106,13 +98,11 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Sezione Eventi
-            <br />
-            elementum magna
+            Eventi
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Concerti, manifestazioni e momenti speciali visti da dietro
+            la mia macchina fotografica.
           </p>
         </div>
       </section>
@@ -124,9 +114,7 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Sezione Altro
-            <br />
-            sed condimentum
+            Miscellanea
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -140,14 +128,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            {/* Magna primis lobortis */}
-            Questa sezione video
-            <br />
-            sed ullamcorper
+            Video
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            I miei lavori di fotografia in movimento.
           </p>
         </div>
       </section>
@@ -156,80 +140,38 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          {/* <h2>Accumsan mus tortor nunc aliquet</h2> */}
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            "Mi avvicinai alla fotografia come un'anatra si avvicina all'acqua. Non ho mai voluto fare niente altro." 
+            <br />Berenice Abbott
           </p>
         </header>
-        {/* <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-        </ul> */}
       </div>
     </section>
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Contatti</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            Per qualsiasi informazione:
+            annadellabadiart@gmail.com  
           </p>
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
-              Activate
+          <Link to="/Gallery#ritratti">
+          <a href="/#" className="button fit primary">
+              About Me
             </a>
+          </Link>
+            {/* <a href="/#" className="button fit primary">
+              About Me
+            </a> */}
           </li>
           <li>
             <a href="/#" className="button fit">
-              Learn More
+              Home
             </a>
           </li>
         </ul>

@@ -26,6 +26,7 @@ const IndexPage = () => (
                     <section>
                         {/* <h4>Gallery</h4> */}
                         <a name="ritratti"><h4>Ritratti</h4></a>
+                        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/wcaZcbain2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                         <div className="box alt" id="ritratti">
                             <div className="row gtr-50 gtr-uniform">
                                 <div className="col-4">
@@ -94,7 +95,9 @@ const IndexPage = () => (
                                 <div className="col-4"><span className="image fit"><img src={altro} alt="" /></span></div> */}
                             </div>
                         </div>
-                        <a name="eventi"><h4>Eventi</h4></a>
+                        <br/>
+                        <br/>
+                        <a name="eventi"><h4 align="right">Eventi</h4></a>
                         <div className="box alt">
                             <div className="row gtr-50 gtr-uniform">
                             <div className="col-4">
@@ -163,6 +166,8 @@ const IndexPage = () => (
                                 <div className="col-4"><span className="image fit"><img src={altro} alt="" /></span></div> */}
                             </div>
                         </div>
+                        <br/>
+                        <br/>
                         <a name="altro"><h4>Altro</h4></a>
                         <div className="box alt">
                             <div className="row gtr-50 gtr-uniform">
@@ -220,6 +225,77 @@ const IndexPage = () => (
                                         medium={altro}
                                     />
                                 </div>
+                                {/* <div className="col-12"><span className="image fit"><img src={banner} alt="" /></span></div> */}
+                                {/* <div className="col-4"><span className="image fit"><img src={ritratti} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={eventi} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={altro} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={altro} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={eventi} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={ritratti} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={ritratti} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={eventi} alt="" /></span></div>
+                                <div className="col-4"><span className="image fit"><img src={altro} alt="" /></span></div> */}
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <a name="altro"><h4 align="right">Video</h4></a>
+                        <div className="box alt">
+                            <div className="row gtr-50 gtr-uniform">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/s8B5-F7B9qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            {/* <div className="col-4">
+                                    <ModalImage
+                                        small={ritratti}
+                                        medium={ritratti}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={eventi}
+                                        medium={eventi}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={altro}
+                                        medium={altro}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={altro}
+                                        medium={altro}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={eventi}
+                                        medium={eventi}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={ritratti}
+                                        medium={ritratti}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={ritratti}
+                                        medium={ritratti}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={eventi}
+                                        medium={eventi}
+                                    />
+                                </div>
+                                <div className="col-4">
+                                    <ModalImage
+                                        small={altro}
+                                        medium={altro}
+                                    />
+                                </div> */}
                                 {/* <div className="col-12"><span className="image fit"><img src={banner} alt="" /></span></div> */}
                                 {/* <div className="col-4"><span className="image fit"><img src={ritratti} alt="" /></span></div>
                                 <div className="col-4"><span className="image fit"><img src={eventi} alt="" /></span></div>
