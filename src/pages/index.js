@@ -47,8 +47,8 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Creativa, amante dell'arte
-            <br />affascinata dal mondo digitale.
+            Creativa, amante dell'arte,
+            <br /> affascinata dal mondo digitale.
           </h2>
           <p>
             Nella fotografia ho trovato la mia principale forma d'espressione.
