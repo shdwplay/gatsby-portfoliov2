@@ -58,40 +58,46 @@ export default function App() {
 
   return (
     <Layout fullMenu>
-      <div className="masonry-wrapper">
-      <div className="masonry-container">
-        <Masonry className={"masonry"} elementType={"div"}>
-          {photos &&
-            photos.map((photo, i) => (
-              <div className="masonry-box">
-                <img
-                  alt={photo.url}
-                  src={photo.url}
-                  onClick={() => showLightbox(photo.url, i)}
-                />
-              </div>
-            ))}
-        </Masonry>
-      </div>
-      </div>
-
-      {lightBox.open && (
-        <div className="lightbox">
-          <button className="close" onClick={() => closeLightbox()}>
-            close
-          </button>
-          {lightBox.index !== 0 && (
-            <button className="leftBtn" onClick={() => navigate("prev")}>
-              Prev
-            </button>
-          )}
-          <img src={lightBox.url} />
-          {lightBox.index !== photos.length - 1 && (
-            <button className="rightBtn" onClick={() => navigate("next")}>
-              Next
-            </button>
-          )}
+      <article id="main">
+        <header>
+          <h2>Gallery</h2>
+          <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+        </header>
+        <div className="masonry-wrapper">
+        <div className="masonry-container">
+          <Masonry className={"masonry"} elementType={"div"}>
+            {photos &&
+              photos.map((photo, i) => (
+                <div className="masonry-box">
+                  <img
+                    alt={photo.url}
+                    src={photo.url}
+                    onClick={() => showLightbox(photo.url, i)}
+                  />
+                </div>
+              ))}
+          </Masonry>
         </div>
+        </div>
+      </article>
+
+        {lightBox.open && (
+          <div className="lightbox">
+            <button className="close" onClick={() => closeLightbox()}>
+              close
+            </button>
+            {lightBox.index !== 0 && (
+              <button className="leftBtn" onClick={() => navigate("prev")}>
+                Prev
+              </button>
+            )}
+            <img src={lightBox.url} />
+            {lightBox.index !== photos.length - 1 && (
+              <button className="rightBtn" onClick={() => navigate("next")}>
+                Next
+              </button>
+            )}
+          </div>
       )}
     </Layout>
   );
