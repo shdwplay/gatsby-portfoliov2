@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Masonry from "react-masonry-component";
 import "../assets/styles/style.css";
+import Layout from '../components/Layout'
 
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
@@ -56,12 +57,13 @@ export default function App() {
   };
 
   return (
-    <>
-      <div className="App">
+    <Layout fullMenu>
+      <div className="masonry-wrapper">
+      <div className="masonry-container">
         <Masonry className={"masonry"} elementType={"div"}>
           {photos &&
             photos.map((photo, i) => (
-              <div className="box">
+              <div className="masonry-box">
                 <img
                   alt={photo.url}
                   src={photo.url}
@@ -70,6 +72,7 @@ export default function App() {
               </div>
             ))}
         </Masonry>
+      </div>
       </div>
 
       {lightBox.open && (
@@ -90,6 +93,6 @@ export default function App() {
           )}
         </div>
       )}
-    </>
+    </Layout>
   );
 }
