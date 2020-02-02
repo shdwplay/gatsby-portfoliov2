@@ -15,6 +15,18 @@ const photos = [
     { url: eventi }, 
     { url: aaa }, 
     { url: ritratti },
+    { url: ritratti } ,
+    { url: aaa }, 
+    { url: altro }, 
+    { url: eventi }, 
+    { url: aaa }, 
+    { url: ritratti },
+    { url: ritratti } ,
+    { url: aaa }, 
+    { url: altro }, 
+    { url: eventi }, 
+    { url: aaa }, 
+    { url: ritratti },
  ];
 
 export default function App() {

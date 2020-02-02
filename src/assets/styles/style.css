@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .masonry-wrapper{
   width:100%;
   background: #2e294e;
@@ -43,7 +42,8 @@ img {
 }
 
 .lightbox img {
-  width: 60%;
+  width: auto;
+  height: 80%;
 }
 
 .lightbox .leftBtn {
@@ -67,28 +67,10 @@ img {
 }
 
 @media (max-width: 768px) {
-=======
-  .masonry-wrapper{
-    width:100%;
-    background: black;
-    padding-top: 1rem;
-  }
-  
-  .masonry-container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .masonry {
-    width: auto;
-  }
-  
->>>>>>> e468c8023d80cc145a7f210bba176dd1540e7bb1
   .masonry-box {
     width: 50%;
     padding: 1%;
   }
-<<<<<<< HEAD
 }
 
 @media (max-width: 450px) {
@@ -101,59 +83,3 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-=======
-  
-  img {
-    width: 100%;
-  }
-  
-  .lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #000000d6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .lightbox img {
-    width: 60%;
-  }
-  
-  .lightbox .leftBtn {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-  }
-  
-  .lightbox .rightBtn {
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-  }
-  
-  .lightbox .close {
-    position: absolute;
-    right: 100px;
-    top: 100px;
-  }
-  
-  @media (max-width: 768px) {
-    .masonry-box {
-      width: 50%;
-      padding: 1%;
-    }
-  }
-  
-  @media (max-width: 450px) {
-    .masonry-box {
-      width: 50%;
-      padding: 1%;
-    }
-  }
->>>>>>> e468c8023d80cc145a7f210bba176dd1540e7bb1
