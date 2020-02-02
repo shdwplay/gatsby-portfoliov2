@@ -1,79 +1,84 @@
 * {
-    /* padding: 0;
-    margin: 0; */
-    box-sizing: border-box;
-  }
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
 
-  .masonry-wrapper{
-    width:100%;
-    background: black;
-    padding-top: 4rem;
-  }
-  
-  .masonry-container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .masonry {
-    width: auto;
-  }
-  
+.masonry-wrapper{
+  width:100%;
+  background: #2e294e;
+  padding-top: 4rem;
+}
+
+.masonry-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.masonry {
+  width: auto;
+}
+
+.masonry-box {
+  width: 33.3333%;
+  padding: 1%;
+}
+
+img {
+  width: 100%;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.lightbox img {
+  width: 60%;
+}
+
+.lightbox .leftBtn {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.lightbox .rightBtn {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.lightbox .close {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+@media (max-width: 768px) {
   .masonry-box {
-    width: 33.3333%;
+    width: 50%;
     padding: 1%;
   }
-  
-  img {
-    width: 100%;
+}
+
+@media (max-width: 450px) {
+  .masonry-box {
+    width: 50%;
+    padding: 2%;
   }
-  
-  .lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .lightbox img {
-    width: 60%;
-  }
-  
-  .lightbox .leftBtn {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-  }
-  
-  .lightbox .rightBtn {
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-  }
-  
-  .lightbox .close {
-    position: absolute;
-    right: 100px;
-    top: 100px;
-  }
-  
-  @media (max-width: 768px) {
-    .box {
-      width: 50%;
-      padding: 1%;
-    }
-  }
-  
-  @media (max-width: 450px) {
-    .box {
-      width: 100%;
-      padding: 1%;
-    }
-  }
+}
+.masonry-container {
+  width: 100%;
+  margin: 0 auto;
+}
