@@ -14,6 +14,7 @@ import eventi from '../assets/images/eventi.jpg';
 import altro from '../assets/images/altro.jpg';
 
 import config from '../../config';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -22,17 +23,20 @@ const IndexPage = () => (
         <p>{config.subHeading}</p>
         <ul className="actions special">
           <li>
-            <Scroll type="id" element="one">
+            {/* <Scroll type="id" element="one">
               <a href="/Gallery" className="button primary">
                 Gallery
               </a>
-            </Scroll>
+            </Scroll> */}
             {/* <Link to="/Gallery">Gallery</Link> */}
             {/* <Scroll type="id" element="one">
               <a href="#two" className="button primary">
                 Video
               </a>
             </Scroll> */}
+            <Link to="/gallery">
+              <p className="button primary">Gallery</p>
+            </Link>
           </li>
         </ul>
       </div>
@@ -77,7 +81,7 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <Link to="/Gallery#ritratti">
+          <Link to="/ritratti">
             <img src={ritratti} alt="" />
           </Link>
         </div>
@@ -92,7 +96,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <Link to="/Gallery#eventi">
+          <Link to="/eventi">
             <img src={eventi} alt="" />
           </Link>
         </div>
@@ -108,13 +112,13 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <Link to="/Gallery#altro">
+          <Link to="/ilresto">
             <img src={altro} alt="" />
           </Link>
         </div>
         <div className="content">
           <h2>
-            Miscellanea
+            Il Resto
           </h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
@@ -160,19 +164,14 @@ const IndexPage = () => (
         </header>
         <ul className="actions stacked">
           <li>
-          <Link to="/Gallery#ritratti">
-          <a href="/#" className="button fit primary">
-              About Me
-            </a>
+          <Link to="/generic">
+            <p className="button fit primary">About Me</p>
           </Link>
-            {/* <a href="/#" className="button fit primary">
-              About Me
-            </a> */}
           </li>
           <li>
-            <a href="/#" className="button fit">
-              Home
-            </a>
+            <Link to="/">
+              <p className="button fit">Home</p>
+            </Link>
           </li>
         </ul>
       </div>

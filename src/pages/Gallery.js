@@ -1,58 +1,14 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import { Link } from 'gatsby';
 
-// import pic1 from '../assets/images/pic01.jpg';
-// import pic2 from '../assets/images/pic02.jpg';
-// import pic3 from '../assets/images/pic03.jpg';
-// import pic4 from '../assets/images/pic04.jpg';
-// import pic5 from '../assets/images/pic05.jpg';
-// import banner from '../assets/images/bannerdef.jpg';
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
-import altro from '../assets/images/altro.jpg';
+import ilresto from '../assets/images/altro.jpg';
+import aaa from '../assets/images/aaa.jpg';
 
-import ModalImage from 'react-modal-image';
-
-const IndexPage = () => {
-
-const sections = [
-    {
-        sectionTitle: "ritratti",
-        images: [
-            ritratti,
-            ritratti,
-            ritratti,
-            ritratti,
-            ritratti
-        ]
-    },
-    {
-        sectionTitle: "eventi",
-        images: [
-            eventi,
-            eventi,
-            eventi,
-            eventi,
-            eventi,
-            eventi,
-        ]
-    },
-    {
-        sectionTitle: "altro",
-        images: [
-            altro,
-            altro,
-            altro,
-            altro,
-            altro,
-            altro,
-            altro
-        ]
-    }
-]
-
-return (
+const IndexPage = () => (
     <Layout fullMenu>
         <article id="main">
             <header>
@@ -62,23 +18,51 @@ return (
             <section className="wrapper style5">
                 <div className="inner">
                     <section>
-                        {sections.map((section, i) => (
-                            <>
-                                <a name={section.sectionTitle}>{section.sectionTitle}</a>
-                                <div className="box alt" id={section.sectionTitle}>
-                                    <div className="row gtr-50 gtr-uniform">
-                                        {section.images.map((img, i) => (
-                                            <div className="col-4" key={i}>
-                                                <ModalImage
-                                                    small={img}
-                                                    medium={img}
-                                                />
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </>
-                        ))}
+                        <h4>Ritratti</h4>
+                        <div className="box alt" id="ritratti">
+                            <div className="row gtr-50 gtr-uniform">
+                                <div className="col-4"><span className="image fit"><Link to="/ritratti"><img src={ritratti} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ritratti"><img src={aaa} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ritratti"><img src={ritratti} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ritratti"><img src={ritratti} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ritratti"><img src={ritratti} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ritratti"><img src={ritratti} alt="" /></Link></span></div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <h4 align="right">Eventi</h4>
+                        <div className="box alt">
+                            <div className="row gtr-50 gtr-uniform">
+                                <div className="col-4"><span className="image fit"><Link to="/eventi"><img src={eventi} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/eventi"><img src={eventi} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/eventi"><img src={eventi} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/eventi"><img src={eventi} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/eventi"><img src={eventi} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/eventi"><img src={eventi} alt="" /></Link></span></div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <h4>Altro</h4>
+                        <div className="box alt">
+                            <div className="row gtr-50 gtr-uniform">
+                                <div className="col-4"><span className="image fit"><Link to="/ilresto"><img src={ilresto} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ilresto"><img src={ilresto} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ilresto"><img src={ilresto} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ilresto"><img src={ilresto} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ilresto"><img src={ilresto} alt="" /></Link></span></div>
+                                <div className="col-4"><span className="image fit"><Link to="/ilresto"><img src={ilresto} alt="" /></Link></span></div>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <h4 align="right">Video</h4>
+                        <div className="box alt">
+                            <div className="row gtr-50 gtr-uniform">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/s8B5-F7B9qk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </section>
@@ -86,5 +70,5 @@ return (
 
     </Layout>
 );
-                    }
+
 export default IndexPage;
