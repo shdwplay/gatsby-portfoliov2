@@ -1,113 +1,116 @@
 import React, { useState } from 'react';
-
+import Masonry from 'react-masonry-component';
+import '../assets/styles/style.css';
 import Layout from '../components/Layout';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; 
 
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
 import altro from '../assets/images/altro.jpg';
+import aaa from '../assets/images/aaa.jpg';
 
-const IndexPage = () => {
+const photos = [
+  { url: ritratti },
+  { url: aaa },
+  { url: altro },
+  { url: eventi },
+  { url: aaa },
+  { url: ritratti },
+  { url: ritratti },
+  { url: aaa },
+  { url: altro },
+  { url: eventi },
+  { url: aaa },
+  { url: ritratti },
+  { url: ritratti },
+  { url: aaa },
+  { url: altro },
+  { url: eventi },
+  { url: aaa },
+  { url: ritratti },
+];
 
-const [photoIndex, setPhotoIndex] = useState(0)
-const [isOpen, setIsOpen] = useState(false)
-const [_section, _setSection] = useState("")
+export default function App() {
+  const [lightBox, setLightbox] = useState({
+    open: false,
+    index: null,
+    url: '',
+  });
 
-const sections = [
-    {
-        sectionTitle: "ritratti",
-        images: [
-            ritratti,
-            eventi,
-            ritratti,
-            ritratti,
-            ritratti
-        ]
-    },
-    {
-        sectionTitle: "eventi",
-        images: [
-            eventi,
-            eventi,
-            eventi,
-            eventi,
-            eventi,
-            eventi,
-        ]
-    },
-    {
-        sectionTitle: "altro",
-        images: [
-            altro,
-            altro,
-            altro,
-            altro,
-            altro,
-            altro,
-            altro
-        ]
+  const showLightbox = (url, index) => {
+    setLightbox({
+      open: true,
+      index,
+      url,
+    });
+  };
+
+  const navigate = direction => {
+    if (direction === 'next') {
+      setLightbox({
+        open: true,
+        index: lightBox.index + 1,
+        url: photos[lightBox.index + 1].url,
+      });
+    } else if (direction === 'prev') {
+      setLightbox({
+        open: true,
+        index: lightBox.index - 1,
+        url: photos[lightBox.index - 1].url,
+      });
     }
-]
+  };
 
-const showPicture = (index, sectionTitle) => {
-    setIsOpen(true)
-    setPhotoIndex(index)
-    _setSection(sectionTitle)
-}
+  const closeLightbox = () => {
+    setLightbox({
+      open: false,
+      index: null,
+      url: '',
+    });
+  };
 
-// Debug
-console.log("photoindex", photoIndex)
-console.log("isOpen", isOpen)
-console.log("current section", _section)
-
-return (
+  return (
     <Layout fullMenu>
-        <article id="main">
-            <header>
-                <h2>Gallery</h2>
-                <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-            </header>
-            <section className="wrapper style5">
-                <div className="inner">
-                    <section>
-                        {sections.map((section, i) => (
-                            <div key={i}>
-                                <a name={section.sectionTitle}>{section.sectionTitle}</a>
-                                <div className="box alt" id={section.sectionTitle}>
-                                    <div className="row gtr-50 gtr-uniform">
-                                        {section.images.map((img, i) => (
-                                            <>
-                                            <div className="col-4" key={i}>
-                                                <img 
-                                                    src={img} 
-                                                    alt="add_a_alt_text_here" 
-                                                    width="100%" 
-                                                    onClick={() => showPicture(i, section.sectionTitle)}
-                                                />
-                                            </div>
-                                            {isOpen && _section === section.sectionTitle && photoIndex === i && (
-                                                <Lightbox
-                                                    mainSrc={section.images[photoIndex]}
-                                                    nextSrc={section.images[(photoIndex + 1) % section.images.length]}
-                                                    prevSrc={section.images[(photoIndex + section.images.length - 1) % section.images.length]}
-                                                    onCloseRequest={() => setIsOpen(false)}
-                                                    onMovePrevRequest={() => setPhotoIndex((photoIndex + section.images.length -1) % section.images.length)}
-                                                    onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % section.images.length)}
-                                                    enableZoom={false}
-                                                />
-                                            )} 
-                                            </>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </section>
-                </div>
-            </section>                             
-        </article>
+      <article id="main">
+        <header>
+          <h2>Galleria Video</h2>
+          <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+        </header>
+        <div className="masonry-wrapper">
+          <div className="masonry-container">
+            <Masonry className={'masonry'} elementType={'div'}>
+              {photos &&
+                photos.map((photo, i) => (
+                  <div className="masonry-box">
+                    <img
+                      alt={photo.url}
+                      src={photo.url}
+                      onClick={() => showLightbox(photo.url, i)}
+                    />
+                  </div>
+                ))}
+            </Masonry>
+          </div>
+        </div>
+      </article>
+
+      {lightBox.open && (
+        <div className="lightbox">
+          <button className="close" onClick={() => closeLightbox()}>
+            close
+          </button>
+          {lightBox.index !== 0 && (
+            <button className="leftBtn" onClick={() => navigate('prev')}>
+              Prev
+            </button>
+          )}
+          <img src={lightBox.url} />
+          {lightBox.index !== photos.length - 1 && (
+            <button className="rightBtn" onClick={() => navigate('next')}>
+              Next
+            </button>
+          )}
+        </div>
+      )}
     </Layout>
-);
-                    }
-export default IndexPage;
+  );
+}

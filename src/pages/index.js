@@ -1,17 +1,12 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-
 import Scroll from '../components/Scroll';
 import { Link } from 'gatsby';
 
-// import pic1 from '../assets/images/pic01.jpg';
-// import pic2 from '../assets/images/pic02.jpg';
-// import pic3 from '../assets/images/pic03.jpg';
-
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
-import altro from '../assets/images/altro.jpg';
+import ilresto from '../assets/images/altro.jpg';
 
 import config from '../../config';
 
@@ -23,20 +18,9 @@ const IndexPage = () => (
         <p>{config.subHeading}</p>
         <ul className="actions special">
           <li>
-            {/* <Scroll type="id" element="one">
-              <a href="/Gallery" className="button primary">
-                Gallery
-              </a>
-            </Scroll> */}
-            {/* <Link to="/Gallery">Gallery</Link> */}
-            {/* <Scroll type="id" element="one">
-              <a href="#two" className="button primary">
-                Video
-              </a>
-            </Scroll> */}
-            <Link to="/gallery">
+            {/* <Link to="/gallery">
               <p className="button primary">Gallery</p>
-            </Link>
+            </Link> */}
           </li>
         </ul>
       </div>
@@ -86,12 +70,8 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="content">
-          <h2>
-            Ritratti
-          </h2>
-          <p>
-            La mia collezione di volti.
-          </p>
+          <h2>Ritratti</h2>
+          <p>La mia collezione di volti.</p>
         </div>
       </section>
       <section className="spotlight">
@@ -101,25 +81,21 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="content">
-          <h2>
-            Eventi
-          </h2>
+          <h2>Eventi</h2>
           <p>
-            Concerti, manifestazioni e momenti speciali visti da dietro
-            la mia macchina fotografica.
+            Concerti, manifestazioni e momenti speciali visti da dietro la mia
+            macchina fotografica.
           </p>
         </div>
       </section>
       <section className="spotlight">
         <div className="image">
           <Link to="/ilresto">
-            <img src={altro} alt="" />
+            <img src={ilresto} alt="" />
           </Link>
         </div>
         <div className="content">
-          <h2>
-            Il Resto
-          </h2>
+          <h2>Il Resto</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
             imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
@@ -131,12 +107,8 @@ const IndexPage = () => (
           <img src={ritratti} alt="" />
         </div>
         <div className="content">
-          <h2>
-            Video
-          </h2>
-          <p>
-            I miei lavori di fotografia in movimento.
-          </p>
+          <h2>Video</h2>
+          <p>I miei lavori di fotografia in movimento.</p>
         </div>
       </section>
     </section>
@@ -146,8 +118,10 @@ const IndexPage = () => (
         <header className="major">
           {/* <h2>Accumsan mus tortor nunc aliquet</h2> */}
           <p>
-            "Mi avvicinai alla fotografia come un'anatra si avvicina all'acqua. Non ho mai voluto fare niente altro." 
-            <br />Berenice Abbott
+            "Mi avvicinai alla fotografia come un'anatra si avvicina all'acqua.
+            Non ho mai voluto fare niente altro."
+            <br />
+            Berenice Abbott
           </p>
         </header>
       </div>
@@ -157,16 +131,13 @@ const IndexPage = () => (
       <div className="inner">
         <header>
           <h2>Contatti</h2>
-          <p>
-            Per qualsiasi informazione:
-            annadellabadiart@gmail.com  
-          </p>
+          <p>Per qualsiasi informazione: annadellabadiart@gmail.com</p>
         </header>
         <ul className="actions stacked">
           <li>
-          <Link to="/generic">
-            <p className="button fit primary">About Me</p>
-          </Link>
+            <Link to="/generic">
+              <p className="button fit primary">About Me</p>
+            </Link>
           </li>
           <li>
             <Link to="/">
