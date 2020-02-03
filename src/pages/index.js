@@ -7,9 +7,9 @@ import '../assets/styles/style.css';
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
 import ilresto from '../assets/images/altro.jpg';
-import facebook from '../assets/images/prova2.png';
+import facebook from '../assets/images/dimmiquesta.png';
 import instagram from '../assets/images/instagram.svg';
-import mail from '../assets/images/viola-instagram.png';
+import mail from '../assets/images/prova2.png';
 // import linkedin from '../assets/images/linkedin.svg';
 // import flickr from '../assets/images/flickr.svg';
 
