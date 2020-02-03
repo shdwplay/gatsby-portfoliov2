@@ -1,12 +1,17 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 import Scroll from '../components/Scroll';
 import { Link } from 'gatsby';
+import '../assets/styles/style.css';
 
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
 import ilresto from '../assets/images/altro.jpg';
+import facebook from '../assets/images/prova2.png';
+import instagram from '../assets/images/instagram.svg';
+import mail from '../assets/images/viola-instagram.png';
+// import linkedin from '../assets/images/linkedin.svg';
+// import flickr from '../assets/images/flickr.svg';
 
 import config from '../../config';
 
@@ -26,7 +31,7 @@ const IndexPage = () => (
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
-          Learn More
+          Sfoglia la galleria
         </a>
       </Scroll>
     </section>
@@ -42,22 +47,28 @@ const IndexPage = () => (
             Nella fotografia ho trovato la mia principale forma d'espressione.
           </p>
         </header>
+
         <ul className="icons major">
           <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
+            <a href="https://www.instagram.com/annadellabadia/">
+              <img src={instagram} />
+            </a>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
+            <a href="https://www.facebook.com/AnnadellabadiaPh/">
+              <img src={facebook} />
+            </a>
           </li>
           <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
+            <a href="mailto:annadellabadiart@gmail.com">
+              <img src={mail} />
+            </a>
           </li>
+          {/* <li>
+            <span>
+              <img src={mail} />
+            </span>
+          </li> */}
         </ul>
       </div>
     </section>
@@ -70,8 +81,10 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="content">
-          <h2>Ritratti</h2>
-          <p>La mia collezione di volti.</p>
+          <Link to="/ritratti">
+            <h2>Ritratti</h2>
+            <p>La mia collezione di volti.</p>
+          </Link>
         </div>
       </section>
       <section className="spotlight">
@@ -81,11 +94,13 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="content">
-          <h2>Eventi</h2>
-          <p>
-            Concerti, manifestazioni e momenti speciali visti da dietro la mia
-            macchina fotografica.
-          </p>
+          <Link to="/eventi">
+            <h2>Eventi</h2>
+            <p>
+              Concerti, manifestazioni e momenti speciali visti da dietro la mia
+              macchina fotografica.
+            </p>
+          </Link>
         </div>
       </section>
       <section className="spotlight">
@@ -95,20 +110,26 @@ const IndexPage = () => (
           </Link>
         </div>
         <div className="content">
-          <h2>Il Resto</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
+          <Link to="/ilresto">
+            <h2>Il Resto</h2>
+            <p>
+              Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
+              imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            </p>
+          </Link>
         </div>
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={ritratti} alt="" />
+          <Link to="/video">
+            <img src={ilresto} alt="" />
+          </Link>
         </div>
         <div className="content">
-          <h2>Video</h2>
-          <p>I miei lavori di fotografia in movimento.</p>
+          <Link to="/video">
+            <h2>Video</h2>
+            <p>I miei lavori di fotografia in movimento.</p>
+          </Link>
         </div>
       </section>
     </section>
@@ -117,7 +138,7 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           {/* <h2>Accumsan mus tortor nunc aliquet</h2> */}
-          <p>
+          <p className="bottom-text">
             "Mi avvicinai alla fotografia come un'anatra si avvicina all'acqua.
             Non ho mai voluto fare niente altro."
             <br />
@@ -130,13 +151,20 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Contatti</h2>
-          <p>Per qualsiasi informazione: annadellabadiart@gmail.com</p>
+          <Link to="/">
+            <h2>Contatti</h2>
+          </Link>
+          <p>
+            Per qualsiasi informazione:{' '}
+            <a href="mailto:annadellabadiart@gmail.com">
+              annadellabadiart@gmail.com
+            </a>
+          </p>
         </header>
         <ul className="actions stacked">
           <li>
-            <Link to="/generic">
-              <p className="button fit primary">About Me</p>
+            <Link to="/chisono">
+              <p className="button fit primary">Chi Sono</p>
             </Link>
           </li>
           <li>

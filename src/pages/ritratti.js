@@ -5,28 +5,29 @@ import Layout from '../components/Layout';
 
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
+import eventi1 from '../assets/images/eventi1.jpg';
 import altro from '../assets/images/altro.jpg';
 import aaa from '../assets/images/aaa.jpg';
-import close from '../assets/images/multiply.png'
+import aaa1 from '../assets/images/aaa1.jpg';
 
 const photos = [
   { url: ritratti },
   { url: aaa },
   { url: altro },
   { url: eventi },
+  { url: aaa1 },
   { url: aaa },
-  { url: ritratti },
-  { url: ritratti },
-  { url: aaa },
+  { url: aaa1 },
+  { url: eventi1 },
   { url: altro },
   { url: eventi },
   { url: aaa },
   { url: ritratti },
   { url: ritratti },
-  { url: aaa },
+  { url: aaa1 },
   { url: altro },
   { url: eventi },
-  { url: aaa },
+  { url: eventi1 },
   { url: ritratti },
 ];
 
