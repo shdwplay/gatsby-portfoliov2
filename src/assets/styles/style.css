@@ -48,14 +48,14 @@ img {
 
 .lightbox .leftBtn {
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 20px;
   transform: translateY(-50%);
 }
 
 .lightbox .rightBtn {
   position: absolute;
-  top: 50%;
+  top: 90%;
   right: 20px;
   transform: translateY(-50%);
 }
@@ -72,6 +72,46 @@ img {
 
 .bottom-text {
   color: #2e294e!important;
+}
+
+img.prova {
+  text-align: center;
+}
+
+button {
+  line-height: 0;
+}
+
+@media (max-width: 1366px) {
+  .masonry-box {
+    width: 50%;
+    padding: 2%;
+  }
+  .masonry-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .lightbox img {
+    width: auto;
+    height: 50%;
+  }
+  .lightbox .leftBtn {
+    position: absolute;
+    top: 90%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+  .lightbox .rightBtn {
+    position: absolute;
+    top: 90%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  .lightbox .close {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+  }
 }
 
 @media (max-width: 1024px) {

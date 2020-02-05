@@ -9,6 +9,8 @@ import eventi1 from '../assets/images/eventi1.jpg';
 import altro from '../assets/images/altro.jpg';
 import aaa from '../assets/images/aaa.jpg';
 import aaa1 from '../assets/images/aaa1.jpg';
+import close from '../assets/images/xxx.png';
+import sx from '../assets/images/sx.png';
 
 const photos = [
   { url: ritratti },
@@ -98,17 +100,17 @@ export default function App() {
       {lightBox.open && (
         <div className="lightbox">
           <button className="close" onClick={() => closeLightbox()}>
-            {/* <img src={close}></img> */} Close
+            <img className="prova" src={close} />
           </button>
           {lightBox.index !== 0 && (
             <button className="leftBtn" onClick={() => navigate('prev')}>
-              Prev
+              <img className="prova" src={sx} />
             </button>
           )}
           <img src={lightBox.url} />
           {lightBox.index !== photos.length - 1 && (
             <button className="rightBtn" onClick={() => navigate('next')}>
-              Next
+              <img className="prova" src={sx} />
             </button>
           )}
         </div>

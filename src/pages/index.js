@@ -9,7 +9,7 @@ import eventi from '../assets/images/eventi.jpg';
 import ilresto from '../assets/images/altro.jpg';
 import facebook from '../assets/images/dimmiquesta.png';
 import instagram from '../assets/images/instagram.svg';
-import mail from '../assets/images/prova2.png';
+import mail from '../assets/images/imstagram1.png';
 // import linkedin from '../assets/images/linkedin.svg';
 // import flickr from '../assets/images/flickr.svg';
 
