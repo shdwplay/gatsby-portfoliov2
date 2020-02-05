@@ -51,17 +51,18 @@ const IndexPage = () => (
         <ul className="icons major">
           <li>
             <a href="https://www.instagram.com/annadellabadia/">
-              <img src={instagram} />
+              <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/AnnadellabadiaPh/">
-              <img src={facebook} />
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
           <li>
             <a href="mailto:annadellabadiart@gmail.com">
-              <img src={mail} />
+              <i class="far fa-envelope"></i>
+              {/* <img src={mail} /> */}
             </a>
           </li>
           {/* <li>

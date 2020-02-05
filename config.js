@@ -37,7 +37,7 @@ module.exports = {
     //   url: 'https://twitter.com/onlyanubhav',
     // },
     {
-      style: 'solid',
+      style: 'regular',
       icon: 'fa-envelope',
       name: 'Email',
       url: 'mailto:annadellabadiart@gmail.com',

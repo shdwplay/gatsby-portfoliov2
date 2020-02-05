@@ -82,6 +82,21 @@ button {
   line-height: 0;
 }
 
+.fab {
+  font-size: 50px;
+  color: #2e294e;
+}
+
+.far {
+  font-size: 50px;
+  color: #2e294e;
+}
+
+.fas {
+  font-size: 50px;
+  color: #2e294e;
+}
+
 @media (max-width: 1366px) {
   .masonry-box {
     width: 50%;
