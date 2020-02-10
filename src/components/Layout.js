@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
-import '../assets/sass/main.scss';
 import Footer from './Footer';
 import SideBar from './Sidebar';
+import '../assets/sass/main.scss';
 
 class Layout extends Component {
   constructor(props) {

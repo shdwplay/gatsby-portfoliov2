@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
@@ -7,59 +6,37 @@ const IndexPage = () => (
     <article id="main">
       <header>
         <h2>Chi Sono</h2>
-        <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+        {/* <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p> */}
       </header>
       <section className="wrapper style5">
         <div className="inner">
-          <h3>Lorem ipsum dolor</h3>
+          {/* <h3>Lorem ipsum dolor</h3> */}
           <p>
-            Morbi mattis mi consectetur tortor elementum, varius pellentesque
-            velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac
-            scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis
-            lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo.
-            Maecenas sagittis felis ac sagittis semper. Curabitur purus leo,
-            tempus sed finibus eget, fringilla quis risus. Maecenas et lorem
-            quis sem varius sagittis et a est. Maecenas iaculis iaculis sem.
-            Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada
-            fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo.
-            Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci
-            fringilla tincidunt. Aliquam eleifend ligula non velit accumsan
-            cursus. Etiam ut gravida sapien.
+            Ciao, sono Anna Della Badia, sono nata nel 1996 nella provincia di Varese.
+            Fin da piccola mi sono avvicinata al mondo della fotografia, ancora alle elementari mi armavo di
+            fotocamere usa e getta e rincorrevo i miei amici per immortalarli, ero felicissima quando mio padre mi
+            faceva scattare con la sua macchina fotografica, fino a quando in casa nostra non è arrivata una piccola
+            compatta digitale, con una risoluzione che ora riterremmo imbarazzante, ma che io portavo ovunque e con
+            cui mi sentivo libera di creare ciò che mi passava per la testa.
           </p>
-
           <p>
-            Vestibulum ultrices risus velit, sit amet blandit massa auctor sit
-            amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis
-            id vel diam. Praesent sit amet posuere risus, eu faucibus lectus.
-            Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam.
-            Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna,
-            sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere
-            leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse
-            id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor
-            consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec
-            felis elementum varius.
+            Al momento di scegliere la scuola superiore non ho avuto alcun dubbio e sono approdata in un istituto
+            fotografico, passando quindi l'intera adolescenza a stretto contatto con quest'arte, impegnandomi sia in
+            progetti scolastici che personali. Mi sono avvicinata alla fotografia di eventi, come concerti, potendo unire
+            la mia passione per la fotografia con quella della musica, e al video, producendo alcuni stop motion.
           </p>
-
-          <hr />
-
-          <h4>Feugiat aliquam</h4>
           <p>
-            Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec
-            varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia
-            tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in
-            tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean
-            erat diam, tempus aliquet erat.
+            Terminato questo percorso scolastico ho avuto la possibilità di trasferirmi a Roma e frequentare il corso di
+            cinema alla RUFA, Rome University of Fine Arts, laureandomi con 110 e lode. In questi anni mi sono
+            indirizzata verso il reparto fotografia sui set, approfondendo questa passione sia dal punto di vista teorico
+            che pratico.
           </p>
-
           <p>
-            Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus
-            rutrum cursus velit, eget condimentum nunc blandit vel. In at
-            pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget,
-            fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra
-            commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim
-            vel, posuere finibus justo. Vivamus facilisis maximus nibh quis
-            pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum.
-            Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.
+            Il ritratto è il tipo di fotografia che amo di più realizzare. Che sia un mio amico, un cantante intento ad
+            esibirsi o un'irrequieta manifestazione, mi piace immortalare l'espressione che compare sul volto del
+            soggetto.
+            Il mio percorso di studi e di vita è stato dunque totalmente incentrato sulla fotografia. Non ho mai avuto il
+            desiderio di fare nient'altro. 
           </p>
         </div>
       </section>

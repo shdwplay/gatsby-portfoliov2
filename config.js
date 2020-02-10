@@ -12,12 +12,6 @@ module.exports = {
   subHeading: 'Portfolio',
   // social
   socialLinks: [
-    // {
-    //   style: 'brands',
-    //   icon: 'fa-github',
-    //   name: 'Github',
-    //   url: 'https://github.com/anubhavsrivastava',
-    // },
     {
       style: 'brands',
       icon: 'fa-instagram',
@@ -29,13 +23,7 @@ module.exports = {
       icon: 'fa-facebook',
       name: 'Facebook',
       url: 'https://www.facebook.com/AnnadellabadiaPh/',
-    }, 
-    // {
-    //   style: 'brands',
-    //   icon: 'fa-twitter',
-    //   name: 'Twitter',
-    //   url: 'https://twitter.com/onlyanubhav',
-    // },
+    },
     {
       style: 'regular',
       icon: 'fa-envelope',

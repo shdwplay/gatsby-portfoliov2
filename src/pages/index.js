@@ -1,19 +1,13 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Scroll from '../components/Scroll';
-import { Link } from 'gatsby';
+import config from '../../config';
 import '../assets/styles/style.css';
 
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
-import ilresto from '../assets/images/altro.jpg';
-import facebook from '../assets/images/dimmiquesta.png';
-import instagram from '../assets/images/instagram.svg';
-import mail from '../assets/images/imstagram1.png';
-// import linkedin from '../assets/images/linkedin.svg';
-// import flickr from '../assets/images/flickr.svg';
-
-import config from '../../config';
+import ilresto from '../assets/images/ilresto.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -29,7 +23,7 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-      <Scroll type="id" element="one">
+      <Scroll type="id" element="two">
         <a href="#one" className="more">
           Sfoglia la galleria
         </a>
@@ -61,15 +55,9 @@ const IndexPage = () => (
           </li>
           <li>
             <a href="mailto:annadellabadiart@gmail.com">
-              <i class="far fa-envelope"></i>
-              {/* <img src={mail} /> */}
+              <i class="fas fa-envelope"></i>
             </a>
           </li>
-          {/* <li>
-            <span>
-              <img src={mail} />
-            </span>
-          </li> */}
         </ul>
       </div>
     </section>
@@ -113,10 +101,7 @@ const IndexPage = () => (
         <div className="content">
           <Link to="/ilresto">
             <h2>Il Resto</h2>
-            <p>
-              Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-              imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-            </p>
+            <p>Still life, luoghi, analogiche e piccoli particolari.</p>
           </Link>
         </div>
       </section>
@@ -152,11 +137,11 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <Link to="/">
+          <Link to="/contatti">
             <h2>Contatti</h2>
           </Link>
           <p>
-            Per qualsiasi informazione:{' '}
+            Puoi scrivermi una mail qui:{' '}
             <a href="mailto:annadellabadiart@gmail.com">
               annadellabadiart@gmail.com
             </a>

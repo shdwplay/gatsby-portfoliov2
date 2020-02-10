@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-
 import '../assets/styles/style.css';
 
 export default function Nav({ onMenuToggle = () => {} }) {
