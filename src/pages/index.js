@@ -8,6 +8,7 @@ import '../assets/styles/style.css';
 import ritratti from '../assets/images/ritratti.jpg';
 import eventi from '../assets/images/eventi.jpg';
 import ilresto from '../assets/images/ilresto.jpg';
+import video from '../assets/images/video.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -108,7 +109,7 @@ const IndexPage = () => (
       <section className="spotlight">
         <div className="image">
           <Link to="/video">
-            <img src={ilresto} alt="" />
+            <img src={video} alt="" />
           </Link>
         </div>
         <div className="content">

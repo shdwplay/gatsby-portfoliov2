@@ -238,17 +238,17 @@ export default function App() {
       {lightBox.open && (
         <div className="lightbox">
           <button className="close" onClick={() => closeLightbox()}>
-            <img className="prova" src={close} />
+            <img className="prova" src={close} alt="" />
           </button>
           {lightBox.index !== 0 && (
             <button className="leftBtn" onClick={() => navigate('prev')}>
-              <img className="prova" src={sx} />
+              <img className="prova" src={sx} alt="" />
             </button>
           )}
-          <img src={lightBox.url} />
+          <img src={lightBox.url} alt={lightBox.url} />
           {lightBox.index !== photos.length - 1 && (
             <button className="rightBtn" onClick={() => navigate('next')}>
-              <img className="prova" src={dx} />
+              <img className="prova" src={dx} alt="" />
             </button>
           )}
         </div>
