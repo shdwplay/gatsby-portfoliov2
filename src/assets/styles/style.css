@@ -79,7 +79,7 @@ img.prova {
 }
 
 button {
-  line-height: 0!important;
+  line-height: 0 !important;
 }
 
 .fab {
