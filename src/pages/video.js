@@ -16,7 +16,7 @@ const IndexPage = () => (
             <iframe
               width="560"
               height="349"
-              src="https://www.youtube.com/embed/s8B5-F7B9qk"
+              src="https://www.youtube.com/embed/bssu0O5mO9I"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen

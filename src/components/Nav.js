@@ -33,7 +33,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
                   <Link
                     to="/"
                     onClick={e => {
-                      console.log({ submenu });
+                      // console.log({ submenu });
                       e.preventDefault();
                       showGallery();
                     }}
@@ -89,7 +89,7 @@ export default function Nav({ onMenuToggle = () => {} }) {
                   <Link
                     to="/"
                     onClick={e => {
-                      console.log({ submenu });
+                      // console.log({ submenu });
                       e.preventDefault();
                       showGallery();
                     }}
